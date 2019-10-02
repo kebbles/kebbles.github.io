@@ -105,6 +105,7 @@ textarea {
   --color4: #a2f6be;
   --color5: #ea4550;
   --color6: #3fa8f4;
+  --color-card: #dddddd;
 }
 
 h1 {
@@ -117,16 +118,104 @@ h2 {
   font-size: 10rem;
   font-family: "Stratos Web SemiBold";
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 p {
   font-family: "Champagne & Limousines";
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0;
 }
 
 #container {
   overflow-x: hidden;
+}
+
+.section {
+  padding: 5vh 20vw 10vh 20vw;
+}
+
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem 3rem 3rem;
+  background-color: var(--color-card);
+  border-radius: 10px 10px 0 0;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Champagne & Limousines";
+  font-weight: bold;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.company-name {
+  font-size: 5rem;
+  color: var(--color1);
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 3rem;
+  color: var(--color2);
+  margin-top: -1%;
+}
+
+.position {
+
+}
+
+.time-spent {
+}
+
+.description {
+
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color1);
+  border-radius: 0 0 10px 10px;
+  padding: 1.5rem 2rem 2rem 2.5rem;
+}
+
+.tech-item {
+  padding: 0.3rem 1rem 0.7rem 1rem;
+  margin-right: 1.5rem;
+  background-color: var(--color5);
+  border-radius: 8px;
+}
+
+.tech-name {
+  font-family: "Stratos Web SemiBold";
+  color: white;
+  font-size: 2rem;
 }
 
 /* Landing section */
@@ -154,10 +243,8 @@ p {
 
 /* About section */
 #about {
-  height: 970px;
+  height: 100%;
   background-color: var(--color2);
-  padding-left: 20vw;
-  padding-right: 20vw; 
   display: flex;
   flex-direction: column;
 
@@ -171,6 +258,14 @@ p {
 #bio {
   background-color: #56666b;
   display: flex;
+  border-radius: 10px; 
+}
+
+#bio-bar {
+  border-top-left-radius: 10px;
+  flex: 10%;
+  background: linear-gradient(to bottom, var(--color4) 28%, var(--color3) 28%, var(--color3) 59%, var(--color5) 59%, var(--color5) 78%, var(--color1) 78%);
+  
 }
 
 #bio-container {
@@ -190,7 +285,7 @@ p {
   font-weight: 300;
   padding: 2rem 0px 2rem 2rem;
   background-color: var(--color1);
-  border-radius: 4px;
+  border-radius: 0 0 10px 10px;
 }
 
 .white-stuff {
@@ -226,6 +321,17 @@ p {
 .bool {
   color: var(--color3);
   display: inline;
+}
+
+/* Work Experience */
+#work {
+  height: 970px;
+  background-color: white;
+}
+
+#work h2 {
+  text-align: left;
+  color: var(--color1);
 }
 
 /* ==========================================================================
