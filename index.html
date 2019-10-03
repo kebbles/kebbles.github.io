@@ -40,41 +40,41 @@
           <img src="img/headshot.jpg" alt="Portrait headshot of Hayden" style="height:300px;width:300px;">
       </div>
       <div id="fancyjson">
-          <span class="white-stuff">var hayden = {<br></span>
-          <span class="line">
-            <span class="key">"age"</span>
+        <span class="white-stuff">var hayden = {<br></span>
+        <span class="line">
+          <span class="key">"age"</span>
+          <span class="colon">:</span>
+          <span class="numbers">20</span>
+          <span class="comma">,</span>
+        </span>
+        <span class="line">
+            <span class="key">"location"</span>
             <span class="colon">:</span>
-            <span class="numbers">20</span>
+            <span class="string">"Toronto, Canada"</span>
             <span class="comma">,</span>
-          </span>
-          <span class="line">
-              <span class="key">"location"</span>
-              <span class="colon">:</span>
-              <span class="string">"Toronto, Canada"</span>
-              <span class="comma">,</span>
-          </span>
-          <span class="line">
-              <span class="key">"student"</span>
-              <span class="colon">:</span>
-              <span class="bool">true</span>
-              <span class="comma">,</span>
-          </span>
-          <span class="line">
-              <span class="key">"graduation"</span>
-              <span class="colon">:</span>
-              <span class="numbers">2021</span>
-              <span class="comma">,</span>
-          </span>
-          <span class="line">
-              <span class="key">"jobStatus"</span>
-              <span class="colon">:</span>
-              <span class="numbers">"looking for summer 2020"</span>
-          </span>
-          <span class="white-stuff">}<br></span>
-        </div>
+        </span>
+        <span class="line">
+            <span class="key">"student"</span>
+            <span class="colon">:</span>
+            <span class="bool">true</span>
+            <span class="comma">,</span>
+        </span>
+        <span class="line">
+            <span class="key">"graduation"</span>
+            <span class="colon">:</span>
+            <span class="numbers">2021</span>
+            <span class="comma">,</span>
+        </span>
+        <span class="line">
+            <span class="key">"jobStatus"</span>
+            <span class="colon">:</span>
+            <span class="numbers">"looking for summer 2020"</span>
+        </span>
+        <span class="white-stuff">}<br></span>
       </div>
     </div>
     <div id="work" class="section">
+      <h2>work experience<span style="color:#a2f6be">.</span></h2>
       <div class="card">
         <div class="info">
           <div class="title-container">
@@ -110,12 +110,136 @@
           <div class="tech-item">
             <span class="tech-name">c#</span>
           </div>
+          <div class="tech-item">
+              <span class="tech-name">jira</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="title-container">
+            <img class="logo" src="img/RBClogo.svg">
+            <div class="title-text">
+              <span class="company-name">Royal Bank of Canada</span>
+              <div class="subtitle">
+                <span class="position">Data Analyst Co-op</span>
+                <span class="time-spent">4 months, Summer 2018</span>
+              </div>
+            </div>
+          </div>
+          <p class="description">
+            <span>● Automated 12 crucial executive-level reports using SQL scripts and Excel; decreased time creating those recurring reports by 95%<br></span>
+            <span>● Designed and implemented 9 weekly ​Control Book​ ​reports for VP of Technology & Operations (T&O) using Tableau<br></span>
+            <span>● Published monthly ​Control Functions Dashboard ​report updates using Tableau and Power BI<br></span>
+            <span>● Used LeanKit for team project management; Kanban methodology to implement Agile<br></span>
+            <span>● Helped create Fiscal Year 2019 Goals Deck for Technology & Operations</span>
+          </p>
+        </div>
+        <div class="tech">
+          <div class="tech-item">
+            <span class="tech-name">sql</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">excel</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">tableau</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">power bi</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">leankit</span>
+          </div>
         </div>
       </div>
     </div>
     <div id="projects" class="section">
+      <h2>projects<span style="color:#ea4550">.</span></h2>
+      <div class="card">
+        <div class="info">
+          <div class="title-container">
+            <span class="project-name">Project SID</span>
+            <a href="https://github.com/jackyzha0/pennappsxx" target="_blank">
+                <img src="img/Github.svg" class="project-link">
+            </a>
+            <a href="https://devpost.com/software/pennappsxx" target="_blank">
+              <img src="img/Devpost.svg" class="project-link">
+          </a>
+          </div>
+          <p class="description">
+            <span>Project SID is a autonomous drone swarm that is capable of efficient and large scale detection. In our demo, we've decided to apply it to tracking debris and trash. The drones carry out individual missions and provide data for us to generate reports mapping out hotspots and documenting the spread of debris.<br></span>
+            <span>I was responsible for the machine learning aspect of the project and retrained last few layers of a custom object detection model on labelled data from our own drone footage. I then continuously pulled images from our Google Cloud Storage bucket to apply the model and draw bounding boxes around found objects. The processed images were then uploaded back into a separate cloud bucket. Furthermore, I helped build the React web application which served as the UI for controlling drones and displaying results.</span>
+          </p>
+        </div>
+        <div class="tech">
+          <div class="tech-item">
+            <span class="tech-name">react</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">python</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">keras</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">numpy</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">pandas</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">matplotlib</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">html</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">css</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">javascript</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+          <div class="info">
+            <div class="title-container">
+              <span class="project-name">NHL Player Styles</span>
+              <a href="https://github.com/QMIND-Team/QMIND-67s-Project/tree/master/code/KMeans_Project" target="_blank">
+                  <img src="img/Github.svg" class="project-link">
+              </a>
+            </div>
+            <p class="description">
+              <span>As a part of the QMIND club on campus, I utilized the K-means Clustering model in Keras for NHL playstyle analysis. This unsupervised learning algorithm grouped players based on certain stats that I chose and produced distinct categories of players. For each group created, all their stats were ranked based on its group average proficiency in that stat compared to other groups. This allowed the results to clearly convey player categories such as the “elite scorers” who were ranked first in goals and shots on net or “the playmaking defensemen” who led the groups in causing turnovers and making breakout passes. Surprisingly, you could put labels on these groups and identify them as certain types of players the hockey community already have names for despite being an unsupervised algorithm. This project was presented at the Canadian Undergraduate Conference on Artificial Intelligence in Kingston, Ontario.</span>
+            </p>
+          </div>
+          <div class="tech">
+            <div class="tech-item">
+              <span class="tech-name">python</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">keras</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">pandas</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">numpy</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">matplotlib</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">scikit-learn</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">jupyter notebook</span>
+            </div>
+          </div>
+        </div>
+    </div>   
 
-    </div>
     <div id="footer">
 
     </div>
